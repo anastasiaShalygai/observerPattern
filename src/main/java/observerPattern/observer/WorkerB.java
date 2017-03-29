@@ -17,6 +17,7 @@ public class WorkerB implements Observer {
 
     public WorkerB(Subject shopData) {
         this.shopData = shopData;
+        //redurant action - leads to infinite assignment values to object
         shopData.registerObserver(this);
     }
 

@@ -12,7 +12,7 @@ public class Demo {
 
     public static void main(String[] args) {
         CompanyData companyData = new CompanyData();
-
+//Why are you creating and not using objects?
         WorkerA workerA = new WorkerA(companyData);
         WorkerB workerB = new WorkerB(companyData);
         WorkerC workerC = new WorkerC(companyData);

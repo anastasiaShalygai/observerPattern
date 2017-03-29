@@ -15,8 +15,10 @@ public class WorkerA implements Observer {
     private String promotions;
     private String novelties;
 
+    //actually, constructor should be changed at all, for all implementations os Observer
     public WorkerA(Subject shopData) {
         this.shopData = shopData;
+        //redurant action - leads to infinite assignment values to object
         shopData.registerObserver(this);
     }
 
